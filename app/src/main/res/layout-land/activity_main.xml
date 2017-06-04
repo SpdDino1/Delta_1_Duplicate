@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vikramkumaresan.delta_1.MainActivity"
+    >
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/redtext"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/greentext"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:background="@android:color/background_light" />
+
+    <Button
+        android:text="G"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenbutton"
+        android:layout_alignBaseline="@+id/redbutton"
+        android:layout_alignBottom="@+id/redbutton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluebutton"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_alignBaseline="@+id/greenbutton"
+        android:layout_alignBottom="@+id/greenbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluetext"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/greentext"
+        android:layout_alignBottom="@+id/greentext"
+        android:layout_alignLeft="@+id/bluebutton"
+        android:layout_alignStart="@+id/bluebutton"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redtext"
+        android:textSize="20dp"
+        android:layout_marginBottom="58dp"
+        android:textAlignment="center"
+        android:background="@android:color/background_light"
+        android:layout_above="@+id/redbutton"
+        android:layout_alignRight="@+id/redbutton"
+        android:layout_alignEnd="@+id/redbutton"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <Button
+        android:text="R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:id="@+id/redbutton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:layout_below="@+id/greenbutton"
+        android:layout_alignLeft="@+id/greenbutton"
+        android:layout_alignStart="@+id/greenbutton"
+        android:layout_marginTop="28dp" />
+</RelativeLayout>
